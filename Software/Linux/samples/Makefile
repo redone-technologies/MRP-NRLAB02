@@ -24,6 +24,7 @@ VPATH = ../src
 # The default rule - compiling our main program:
 all:	 
 	make clean
+	mkdir -p bin
 	$(CC) -o ./bin/motor_rpm ./samples/motor_rpm.cpp $(INC) $(CFLAGS) $(LFLAGS)
 	$(CC) -o ./bin/vel_cmd ./samples/vel_cmd.cpp $(INC) $(CFLAGS) $(LFLAGS)
 	$(CC) -o ./bin/sensor_read ./samples/sensor_read.cpp $(INC) $(CFLAGS) $(LFLAGS)
